@@ -1,119 +1,47 @@
-# 📡 BeaconStrike
+<div align="center">
 
-> **The Ultimate WPA3/WPA2 Channel Switch Exploit Toolkit**
-> *Seamlessly audit wireless networks by forcing client disconnections via CSA injection.*
+# 📡 BEACONSTRIKE
+**The Ultimate WPA3/WPA2 Channel Switch Exploit Toolkit**
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Linux%20(Kali%2FArch%2FDebian)-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
-![MadeBy](https://img.shields.io/badge/Made%20By-CONFNAMELESS-red)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey?style=for-the-badge&logo=linux&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
 
----
+<br>
 
-## 💀 What is BeaconStrike?
+<a href="#-features">Features</a> •
+<a href="#-installation">Installation</a> •
+<a href="#-usage">Usage</a> •
+<a href="#-legal-disclaimer">Disclaimer</a>
 
-**BeaconStrike** is an advanced, automated Python 3 script designed to test the resilience of Wi-Fi clients against **Channel Switch Announcement (CSA)** attacks.
-
-Unlike traditional deauthentication attacks that are blocked by WPA3's **Protected Management Frames (PMF)**, BeaconStrike exploits the roaming logic in modern devices. It injects spoofed Beacon frames containing **IE 37 (Channel Switch Announcement)**, tricking connected clients into jumping to a "dead" channel (e.g., Channel 140), effectively disconnecting them without triggering intrusion detection systems.
-
-### 🔥 Key Features
-
-* **🛡️ PEP-668 Bypass:** Automatically creates a hidden Virtual Environment (`.venv`) to fix "Externally Managed Environment" errors on modern Linux distros (Kali 2024, Ubuntu 24.04).
-* **📦 Auto-Dependency Magic:** Detects your OS (Debian/Arch/Fedora) and automatically installs system tools (`aircrack-ng`) and Python libraries (`Scapy`, `Rich`).
-* **👁️ God Mode Scanner:** Live, auto-updating table of all nearby APs and connected Clients with signal strength (RSSI) sorting.
-* **🎯 Precision Targeting:** Surgically target a single client MAC or nuke the entire network (Broadcast).
-* **🔄 Self-Updating:** Built-in engine checks GitHub for updates and patches itself automatically.
-
----
-
-## 📥 Installation
-
-BeaconStrike works out of the box on almost any Linux system (Kali, Parrot, Ubuntu, Arch).
-
-```bash
-# 1. Download the script
-wget [https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py](https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py)
-
-# 2. Make it executable
-chmod +x beaconstrike.py
-
-# 3. Run it (Root is required for hardware access)
-sudo ./beaconstrike.py
-
-This looks excellent! It is professional, clear, and includes all the necessary badges and legal disclaimers.
-
-However, I noticed a small formatting issue in your text: the code blocks (the black boxes) were not closed properly in the "Installation" and "Screenshots" sections. If you leave it like that, the text will look broken on GitHub.
-
-Here is the corrected version. I have fixed the code blocks so you can copy and paste this entire block directly into your README.md file.
-
-Markdown
-
-# 📡 BeaconStrike
-
-> **The Ultimate WPA3/WPA2 Channel Switch Exploit Toolkit**
-> *Seamlessly audit wireless networks by forcing client disconnections via CSA injection.*
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Linux%20(Kali%2FArch%2FDebian)-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
-![MadeBy](https://img.shields.io/badge/Made%20By-CONFNAMELESS-red)
+</div>
 
 ---
 
 ## 💀 What is BeaconStrike?
 
-**BeaconStrike** is an advanced, automated Python 3 script designed to test the resilience of Wi-Fi clients against **Channel Switch Announcement (CSA)** attacks.
+**BeaconStrike** is a next-generation wireless auditing tool designed to challenge **WPA3 Security**.
 
-Unlike traditional deauthentication attacks that are blocked by WPA3's **Protected Management Frames (PMF)**, BeaconStrike exploits the roaming logic in modern devices. It injects spoofed Beacon frames containing **IE 37 (Channel Switch Announcement)**, tricking connected clients into jumping to a "dead" channel (e.g., Channel 140), effectively disconnecting them without triggering intrusion detection systems.
+While traditional deauthentication attacks are rendered useless by WPA3's **Protected Management Frames (PMF)**, BeaconStrike bypasses these protections by exploiting the **Channel Switch Announcement (CSA)** mechanism found in 802.11 beacons. It surgically injects spoofed management frames (IE 37) to force connected clients onto "dead" channels, effectively disconnecting them without triggering standard intrusion detection systems.
 
-### 🔥 Key Features
+## 🔥 Features
 
-* **🛡️ PEP-668 Bypass:** Automatically creates a hidden Virtual Environment (`.venv`) to fix "Externally Managed Environment" errors on modern Linux distros (Kali 2024, Ubuntu 24.04).
-* **📦 Auto-Dependency Magic:** Detects your OS (Debian/Arch/Fedora) and automatically installs system tools (`aircrack-ng`) and Python libraries (`Scapy`, `Rich`).
-* **👁️ God Mode Scanner:** Live, auto-updating table of all nearby APs and connected Clients with signal strength (RSSI) sorting.
-* **🎯 Precision Targeting:** Surgically target a single client MAC or nuke the entire network (Broadcast).
-* **🔄 Self-Updating:** Built-in engine checks GitHub for updates and patches itself automatically.
+| Feature | Description |
+| :--- | :--- |
+| **🛡️ PEP-668 Bypass** | Automatically creates a hidden Virtual Environment (`.venv`) to bypass "Externally Managed Environment" errors on Kali 2024 & Ubuntu. |
+| **📦 Auto-Dependency** | Detects your OS (Debian/Arch/Fedora) and auto-installs system tools (`aircrack-ng`) and Python libraries. |
+| **👁️ God Mode Scanner** | Live, auto-updating dashboard of APs and Clients with signal strength (RSSI) sorting. |
+| **🎯 Laser Targeting** | Select a specific client MAC address to kick, or broadcast to the entire network. |
+| **🔄 Self-Healing** | Built-in updater checks GitHub for the latest patches and installs them automatically. |
 
 ---
 
 ## 📥 Installation
 
-BeaconStrike works out of the box on almost any Linux system (Kali, Parrot, Ubuntu, Arch).
+BeaconStrike is designed to be "Download & Run." It works out-of-the-box on **Kali Linux**, **Parrot OS**, **Arch Linux**, and **Ubuntu**.
 
+### 1. Clone the Repository
 ```bash
-# 1. Download the script
-wget [https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py](https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py)
-
-# 2. Make it executable
-chmod +x beaconstrike.py
-
-# 3. Run it (Root is required for hardware access)
-sudo ./beaconstrike.py
-Note: You do not need to install pip libraries manually. The script will handle everything on the first run.
-'''
-
-📸 Screenshots
-Plaintext
-
-██████╗ ███████╗ █████╗  ██████╗ ██████╗ ███╗   ██╗
-██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗████╗  ██║
-██████╔╝█████╗  ███████║██║     ██║   ██║██╔██╗ ██║
-██╔══██╗██╔══╝  ██╔══██║██║     ██║   ██║██║╚██╗██║
-██████╔╝███████╗██║  ██║╚██████╗╚██████╔╝██║ ╚████║
-╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝
-            [ MADE BY CONFNAMELESS ]
-⚠️ Legal Disclaimer
-FOR EDUCATIONAL PURPOSES ONLY.
-
-The use of this script is intended for authorized penetration testing and security research only.
-
-Do not use this tool on networks you do not own or have explicit permission to test.
-
-The author (Confnameless) is not responsible for any misuse or damage caused by this program.
-
-Unlawful interception of wireless communications is a crime in most jurisdictions.
-
-👤 Credits
-Author: Confnameless
-
-Libraries: Scapy, Rich
+git clone [https://github.com/confnameless/BeaconStrike.git](https://github.com/confnameless/BeaconStrike.git)
+cd BeaconStrike
