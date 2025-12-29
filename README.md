@@ -36,10 +36,38 @@ BeaconStrike works out of the box on almost any Linux system (Kali, Parrot, Ubun
 
 ```bash
 # 1. Download the script
-wget [https://raw.githubusercontent.com/YourUsername/BeaconStrike/main/beaconstrike.py](https://raw.githubusercontent.com/YourUsername/BeaconStrike/main/beaconstrike.py)
+wget [https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py](https://raw.githubusercontent.com/confnameless/BeaconStrike/main/beaconstrike.py)
 
 # 2. Make it executable
 chmod +x beaconstrike.py
 
 # 3. Run it (Root is required for hardware access)
 sudo ./beaconstrike.py
+
+Note: You do not need to install pip libraries manually. The script will handle everything on the first run.
+
+📸 Screenshots
+Plaintext
+
+██████╗ ███████╗ █████╗  ██████╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗████╗  ██║
+██████╔╝█████╗  ███████║██║     ██║   ██║██╔██╗ ██║
+██╔══██╗██╔══╝  ██╔══██║██║     ██║   ██║██║╚██╗██║
+██████╔╝███████╗██║  ██║╚██████╗╚██████╔╝██║ ╚████║
+╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝
+            [ MADE BY CONFNAMELESS ]
+⚠️ Legal Disclaimer
+FOR EDUCATIONAL PURPOSES ONLY.
+
+The use of this script is intended for authorized penetration testing and security research only.
+
+Do not use this tool on networks you do not own or have explicit permission to test.
+
+The author (Confnameless) is not responsible for any misuse or damage caused by this program.
+
+Unlawful interception of wireless communications is a crime in most jurisdictions.
+
+👤 Credits
+Author: Confnameless
+
+Libraries: Scapy, Rich
