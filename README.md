@@ -45,3 +45,54 @@ BeaconStrike is designed to be "Download & Run." It works out-of-the-box on **Ka
 ```bash
 git clone [https://github.com/confnameless/BeaconStrike.git](https://github.com/confnameless/BeaconStrike.git)
 cd BeaconStrike
+
+2. Make Executable
+Bash
+
+chmod +x beaconstrike.py
+3. Run (Root Required)
+Bash
+
+sudo ./beaconstrike.py
+Note: You do NOT need to manually install pip requirements. The script's bootstrapper handles all library installations on the first launch.
+
+🚀 Usage Guide
+Launch the Tool: Run with sudo. The script will automatically kill interfering processes (NetworkManager).
+
+Select Interface: Choose your wireless card. Monitor mode is enabled automatically.
+
+Scan Targets: A live table will appear. Press Ctrl+C to stop scanning and select a target AP.
+
+Attack: Choose a specific victim client or "Broadcast" to kick everyone.
+
+Results: Watch as the target device disconnects or struggles to maintain a connection.
+
+📸 Interface
+Plaintext
+
+██████╗ ███████╗ █████╗  ██████╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗████╗  ██║
+██████╔╝█████╗  ███████║██║     ██║   ██║██╔██╗ ██║
+██╔══██╗██╔══╝  ██╔══██║██║     ██║   ██║██║╚██╗██║
+██████╔╝███████╗██║  ██║╚██████╗╚██████╔╝██║ ╚████║
+╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝
+            [ MADE BY CONFNAMELESS ]
+(Place a screenshot of your tool running here. Example: ![Screenshot](assets/demo.png))
+
+⚠️ Legal Disclaimer
+[!WARNING] FOR EDUCATIONAL PURPOSES ONLY.
+
+The use of this script is intended for authorized penetration testing and security research only.
+
+Do not use this tool on networks you do not own or have explicit permission to test.
+
+The author (Confnameless) is not responsible for any misuse or damage caused by this program.
+
+Unlawful interception of wireless communications is a crime in most jurisdictions.
+
+👤 Credits
+Author: Confnameless
+
+Core Logic: Scapy
+
+UI Framework: Rich
